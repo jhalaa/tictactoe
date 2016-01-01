@@ -1,44 +1,23 @@
 <!DOCTYPE html>
   <head>
-    <script type="text/javascript">
-      function canvasClicked(numb) {
-        var c = document.getElementById(numb);
-        var cxt = c.getContext("2d");
-        /*cxt.beginPath();
-            cxt.moveTo(10,10);
-            cxt.lineTo(40,40);
-            cxt.moveTo(40,10);
-            cxt.lineTo(10,40);
-            cxt.stroke();
-            cxt.closePath();*/
-            cxt.beginPath();
-48
-            cxt.arc(25,25,20,0,Math.PI*2,true);
-49
-            cxt.stroke();
-50
-            cxt.closePath();
-
-
-
-      }
-    </script>
+    <link href="stylesheet.css" rel="stylesheet"/>
+    <script src="javascript.js"></script>
   </head>
   <body>
       <h1>~~lets play</h1>
       <h2>tic tac toe<h2>
         <div>
-        <canvas id ="canvas1" onclick="canvasClicked('canvas1')" height="50px" width="50px" style="border:1px solid black;"></canvas>
-        <canvas id ="canvas2" onclick="canvasClicked('canvas2')" height="50px" width="50px" style="border:1px solid black;"></canvas>
-        <canvas id ="canvas3" onclick="canvasClicked('canvas3')" height="50px" width="50px" style="border:1px solid black;"></canvas>
+        <canvas id ="canvas1" onclick="canvasClicked('canvas1')" height="50px" width="50px" ></canvas>
+        <canvas id ="canvas2" onclick="canvasClicked('canvas2')" height="50px" width="50px" ></canvas>
+        <canvas id ="canvas3" onclick="canvasClicked('canvas3')" height="50px" width="50px" ></canvas>
         <br>
-        <canvas id ="canvas4" onclick="canvasClicked('canvas4')" height="50px" width="50px" style="border:1px solid black;"></canvas>
-        <canvas id ="canvas5" onclick="canvasClicked('canvas5')" height="50px" width="50px" style="border:1px solid black;"></canvas>
-        <canvas id ="canvas6" onclick="canvasClicked('canvas6')" height="50px" width="50px" style="border:1px solid black;"></canvas>
+        <canvas id ="canvas4" onclick="canvasClicked('canvas4')" height="50px" width="50px" ></canvas>
+        <canvas id ="canvas5" onclick="canvasClicked('canvas5')" height="50px" width="50px" ></canvas>
+        <canvas id ="canvas6" onclick="canvasClicked('canvas6')" height="50px" width="50px" ></canvas>
         <br>
-        <canvas id ="canvas7" onclick="canvasClicked('canvas7')" height="50px" width="50px" style="border:1px solid black;"></canvas>
-        <canvas id ="canvas8" onclick="canvasClicked('canvas8')" height="50px" width="50px" style="border:1px solid black;"></canvas>
-        <canvas id ="canvas9" onclick="canvasClicked('canvas9')" height="50px" width="50px" style="border:1px solid black;"></canvas>
+        <canvas id ="canvas7" onclick="canvasClicked('canvas7')" height="50px" width="50px" ></canvas>
+        <canvas id ="canvas8" onclick="canvasClicked('canvas8')" height="50px" width="50px" ></canvas>
+        <canvas id ="canvas9" onclick="canvasClicked('canvas9')" height="50px" width="50px" ></canvas>
         <br>
       </div>
   </body>
