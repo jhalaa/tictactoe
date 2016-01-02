@@ -38,6 +38,7 @@
             checkForWinners(painted[idOfElement]);
             if(numberOfClicks==9) {
               alert("GAME OVER");
+              playAgain();
             }
         }
       }
@@ -46,6 +47,17 @@
         for(var a =0;a<winningCombinations.length;a++){
           if(painted[winningCombinations[a][0]]==symbol && painted[winningCombinations[a][1]]==symbol && painted[winningCombinations[a][2]]==symbol){
               alert("yea! "+symbol+" won");
+              playAgain();
             }
           }
+      }
+      function playAgain(){
+        var yes= confirm("Do you want to play again?");
+        if(yes == true){
+          alert("OK!May the best man win :p");
+          location.reload(true);
+        }
+        else {
+          alert("Buh bye...");
+        }
       }
