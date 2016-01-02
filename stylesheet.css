@@ -1,9 +1,20 @@
 canvas
 {
   border:1px solid black;
+  position:relative;
+  background-color: bisque;
+  -webkit-animation:canvasAnimation 5s;
+
 }
 body
 {
   background-color: burlywood;
   text-align: center;
+}
+@-webkit-keyframes canvasAnimation {
+    0%   {-webkit-transform:rotate(90deg);left:0px; top:0px;}
+}
+#board {
+  background-color: black;
+  display: inline-block;
 }
